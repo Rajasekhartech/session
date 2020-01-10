@@ -5,4 +5,6 @@ from django.http import HttpResponse
 def home(request):
     return render(request, "user/home.html")
 def user_login(request):
-    return HttpResponse ("login page")
+    return render(request, "user/login.html")
+def user_register(request):
+    return render(request, "user/register.html")

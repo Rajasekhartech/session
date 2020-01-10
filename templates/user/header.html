@@ -10,18 +10,12 @@
                     Home
                 </a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">
-                    Polls
-                </a>
-            </li>
         </ul>
     </div>
-        <div class="text-right">
+        <div class="">
 
-            <a class="nav-link" href="#">
-                    login
-                </a>
-            <input type="submit" class="btn btn-danger" value="logout">
+            <a class="text-right" href=" {% url "user_login" %}">Login</a>
+            <a class="text-right" href=" {% url "user_register" %}">Register</a>
+
         </div>
 </div>
